@@ -50,9 +50,9 @@ function init() {
    * @param {Element} el
    */
   function addFocusRingClass(el) {
-    if (classList(el).contains('focus-ring'))
+    if (el.classList.contains('focus-ring'))
       return;
-    classList(el).add('focus-ring');
+    el.classList.add('focus-ring');
     el.setAttribute('data-focus-ring-added', '');
   }
 
@@ -64,7 +64,7 @@ function init() {
   function removeFocusRingClass(el) {
     if (!el.hasAttribute('data-focus-ring-added'))
       return;
-    classList(el).remove('focus-ring');
+    el.classList.remove('focus-ring');
     el.removeAttribute('data-focus-ring-added');
   }
 
