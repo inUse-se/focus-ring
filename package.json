@@ -27,8 +27,5 @@
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-watch": "^3.2.2"
-  },
-  "dependencies": {
-    "dom-classlist": "^1.0.1"
   }
 }
