@@ -1,5 +1,3 @@
-import classList from 'dom-classlist';
-
 /**
  * https://github.com/WICG/focus-ring
  */
