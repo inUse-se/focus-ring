@@ -135,7 +135,7 @@ function init() {
     // document.activeElement === null
     if (!document.activeElement)
       return;
-    if (classList(document.activeElement).contains('focus-ring')) {
+    if (document.activeElement.classList.contains('focus-ring')) {
       // Keep a reference to the element to which the focus-ring class is applied
       // so the focus-ring class can be restored to it if the window regains
       // focus after being blurred.
@@ -149,7 +149,7 @@ function init() {
   window.addEventListener('focus', onWindowFocus, true);
   window.addEventListener('blur', onWindowBlur, true);
 
-  classList(document.body).add('js-focus-ring');
+  document.body.classList.add('js-focus-ring');
 }
 
 /**
